@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <!-- Link to google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <link rel='preload' href='https://static.everyaction.com/ea-actiontag/at.min.css' as='style'>
+    <!-- <script type='text/javascript' src='https://static.everyaction.com/ea-actiontag/at.js' defer crossorigin='anonymous'></script> -->
+    <div class="render-preview large-shadow">
+      <div class="ngp-area">
+        <div class="ngp-form"
+          data-form-url="https://secure.ngpvan.com/v1/Forms/Rexn4K_3R0idP2IMDocT0w2"
+              data-fastaction-endpoint="https://fastaction.ngpvan.com"
+          data-inline-errors="true"
+          data-fastaction-nologin="true"
+          data-databag-endpoint="https://profile.ngpvan.com"
+          data-databag="everybody"
+          data-mobile-autofocus="false">
+        </div>  
+      </div>
+    </div>
+
+    <div class="options large-shadow">
+      <h1>Customize the form!</h1>
+      <div class="option">
+        <h3>Form URL</h3>
+        <input type="text" name="form_url" id="form_url" value="https://secure.ngpvan.com/v1/Forms/Rexn4K_3R0idP2IMDocT0w2" placeholder="Enter form URL here" />
+      </div>
+      <div class="option">
+        <h3>Form Background Settings</h3>
+        <label for="form_background_transparent">
+          Form Background Transparent?
+          <input type="checkbox" name="form_background_transparent" id="form_background_transparent" value="true" />
+        </label>
+        <label for="form_background_color">
+          Form Background Color
+          <input type="color" name="form_background_color" id="form_background_color" value="#ffffff" />
+        </label>
+      </div>
+      <div class="option">
+        <h3>Hide header text?</h3>
+        <label for="hide_header">
+          Hide header text 
+          <input type="checkbox" name="hide_header" id="hide_header" />
+        </label>
+      </div>
+      <div class="option">
+        <h3>Vertical or horizontal?</h3>
+        <div class="accordion">
+          <label for="vertical">
+            Vertical
+            <input type="radio" name="orientation" id="vertical" value="vertical" checked>
+          </label>
+          <label for="horizontal">
+            Horizontal
+            <input type="radio" name="orientation" id="horizontal" value="horizontal">
+          </label>
+        </div>
+      </div>
+      <!-- Input padding control -->
+      <div class="option">
+        <h3>Input Controls</h3>
+        <div class="accordion">
+          <label for="border_radius">
+            Input Border Radius
+            <input type="range" name="border_radius" id="border_radius" min="0" max="50" value="0">
+          </label>
+          <label for="input_padding">
+            Input padding
+            <input type="range" name="input_padding" id="input_padding" min="17" max="50" value="0">
+          </label>
+          <label for="input_text_color">
+            Input Text Color
+            <input type="color" name="input_text_color" id="input_text_color" value="#000000">
+          </label>
+          <label for="border_color">
+            Input Border color
+            <input type="color" name="border_color" id="border_color" value="#ced4da">
+          </label>
+          <label for="input_background_color">
+            Input Background Color
+            <input type="color" name="input_background_color" id="input_background_color" value="#ffffff">
+          </label>
+        </div>
+      </div>
+      <!-- Submit button options -->
+      <div class="option">
+        <h3>Submit button</h3>
+        <div class="accordion">
+          <label for="submit_background_color">
+            Submit button background color
+            <input type="color" name="submit_background_color" id="submit_background_color" value="#228ae6">
+          </label>
+          <label for="submit_text_color">
+            Submit button text color
+            <input type="color" name="submit_text_color" id="submit_text_color" value="#ffffff">
+          </label>
+          <label for="submit_button_full_width">
+            Submit button full width
+            <input type="checkbox" name="submit_button_full_width" id="submit_button_full_width" />
+          </label>
+        </div>
+      </div>
+      <!-- Drag drop section -->
+      <div class="drag-drop-wrapper">
+        <p>Drag the fields to rearrange the order of elements</p>
+        <div class="spacer"></div>
+        <ul id="drag-drop-list">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
